@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+            src="https://kit.fontawesome.com/4c536a6bd5.js"
+            crossorigin="anonymous"
+    ></script>
+
+</head>
+<body>
+<header>
+    <h1 class="title">Etch a sketch</h1>
+</header>
+<main class="main">
+    <div class="settings">
+        <input type="color" id="colorPicker" value="#000000">
+        <button id="colorBtn">Mode couleur</button>
+        <button id="rainbowBtn">Mode Arc-en-ciel</button>
+        <button id="eraserBtn">Effacer</button>
+        <button id="clearBtn">Remettre a zero</button>
+        <div class="size-value" id="size-value">16x16</div>
+        <input id="sizeSlider"  type="range" value="16" min="1" max="64">
+    </div>
+    <div id="grid" class="grid"></div>
+</main>
+<footer class="footer">
+    <p>Copyright
+        <script >
+            document.write(new Date().getFullYear())
+        </script>
+        Patrice_ReactJsGooru
+    </p>
+    <a href="https://github.com/PatouVIDEGNON" target="_blank">
+        <i class="fab fa-github"></i
+        ></a>
+</footer>
+</body>
+</html>
